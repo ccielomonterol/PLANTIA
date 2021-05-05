@@ -16,13 +16,21 @@ body {
   font-weight: 600;
   margin: auto !important;
   padding: 0px 35px !important;
-  color: rosybrown  !important; }
+  color: rosybrown !important; }
+  .item ul {
+    background-color: #C7E1A7; }
+    .item ul li {
+      transition: all 0.5s; }
+    .item ul li:hover {
+      transform: scale(1.1);
+      text-decoration: underline; }
+    .item ul a {
+      color: rosybrown; }
 
-.item ul {
-  background-color: #C7E1A7; }
-
-.item a {
-  color: rosybrown; }
+.submenuboot li {
+  transition: all 0.5s; }
+  .submenuboot li li:hover {
+    transform: scale(1.1); }
 
 /*FOOTER*/
 footer {
@@ -987,7 +995,8 @@ h5 {
       height: 100%;
       overflow: hidden;
       display: inline-block;
-      margin-top: 10px; }
+      margin-top: 10px;
+      align-items: stretch; }
   .titulosBox3 {
     padding: 10px;
     text-align: center; }
