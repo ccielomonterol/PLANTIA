@@ -9,6 +9,37 @@
   .listaMenu {
     list-style: none inside,
   }
+  .navnav {
+    background-color: #C7E1A7 !important;
+  }
+  .item{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: auto !important;
+    padding: 0px 35px !important;
+    color: rosybrown !important;
+       ul  {
+    background-color: #C7E1A7;
+        li {
+          transition: all 0.5s;
+        };
+        li:hover {
+          transform: scale(1.1);
+          text-decoration: underline;
+        }
+        a {
+    color: rosybrown;
+}
+}
+}
+.submenuboot {
+  li{
+    transition: all 0.5s;
+    li:hover {
+      transform: scale(1.1);
+    }
+  }
+}
 
   /*FOOTER*/ 
   footer {

@@ -8,6 +8,30 @@ body {
 .listaMenu {
   list-style: none inside; }
 
+.navnav {
+  background-color: #C7E1A7 !important; }
+
+.item {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: auto !important;
+  padding: 0px 35px !important;
+  color: rosybrown !important; }
+  .item ul {
+    background-color: #C7E1A7; }
+    .item ul li {
+      transition: all 0.5s; }
+    .item ul li:hover {
+      transform: scale(1.1);
+      text-decoration: underline; }
+    .item ul a {
+      color: rosybrown; }
+
+.submenuboot li {
+  transition: all 0.5s; }
+  .submenuboot li li:hover {
+    transform: scale(1.1); }
+
 /*FOOTER*/
 footer {
   grid-area: footer;
