@@ -3,13 +3,19 @@
   padding: 0px; }
 
 body {
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 .listaMenu {
   list-style: none inside; }
 
 .navnav {
-  background-color: #C7E1A7 !important; }
+  background-color: #c7e1a7 !important; }
+
+.drop {
+  z-index: 1; }
+
+.fotoIndex {
+  z-index: 5; }
 
 .item {
   font-size: 1.1rem;
@@ -18,145 +24,66 @@ body {
   padding: 0px 35px !important;
   color: rosybrown !important; }
   .item ul {
-    background-color: #C7E1A7; }
+    background-color: #c7e1a7; }
     .item ul li {
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      z-index: 1 !important; }
     .item ul li:hover {
       transform: scale(1.1);
-      text-decoration: underline; }
+      text-decoration: underline;
+      z-index: 1 !important; }
     .item ul a {
       color: rosybrown; }
-
-.submenuboot li {
-  transition: all 0.5s; }
-  .submenuboot li li:hover {
-    transform: scale(1.1); }
 
 /*FOOTER*/
 footer {
   grid-area: footer;
-  background-image: linear-gradient(to top, #ddbfbf, #C7E1A7);
+  background-image: linear-gradient(to top, #ddbfbf, #c7e1a7);
   height: 100%; }
-
-.footer ul {
-  list-style-type: none;
-  text-decoration: none; }
-
-.footer ul li {
-  list-style-type: none;
-  text-decoration: none;
-  font-size: 16px; }
-
-.footer li a {
-  text-decoration: none;
-  color: rosybrown;
-  font-size: 1rem; }
-
-.footer form {
-  background-color: inherit; }
-
-.footer div {
-  padding: 15px;
-  margin: 10px; }
-
-.footer form legend {
-  font-size: 1rem; }
-
-.footer .sitemap {
-  display: none; }
+  footer ul {
+    list-style-type: none;
+    text-decoration: none; }
+    footer ul li {
+      list-style-type: none;
+      text-decoration: none;
+      font-size: 16px; }
+      footer ul li a {
+        text-decoration: none;
+        color: rosybrown;
+        font-size: 1rem; }
+  footer form {
+    background-color: inherit; }
+    footer form legend {
+      font-size: 1rem; }
+  footer div {
+    padding: 15px;
+    margin: 10px; }
+  footer .sitemap {
+    display: none; }
 
 @media only screen and (min-width: 600px) {
   .footer {
     padding: 15px; }
-  .footer .footer1 {
-    display: flex;
-    flex-flow: row wrap; }
-  .footer1 article {
-    margin: auto;
-    width: 50%;
-    height: 100%;
-    margin: auto; }
-  .footer .sitemap {
-    display: flex;
-    flex-flow: row wrap;
-    border-top: #bc8f8f 1px solid;
-    margin-left: 55px; }
-    .footer .sitemap li:hover {
-      text-decoration: underline; } }
+    .footer .footer1 {
+      display: flex;
+      flex-flow: row wrap; }
+      .footer .footer1 article {
+        margin: auto;
+        width: 50%;
+        height: 100%;
+        margin: auto; }
+    .footer .sitemap {
+      display: flex;
+      flex-flow: row wrap;
+      border-top: #bc8f8f 1px solid;
+      margin-left: 55px; }
+      .footer .sitemap li:hover {
+        text-decoration: underline; } }
 
 /*logo*/
 .logo img {
   width: 100%;
   max-width: 80px; }
-
-/*menu*/
-.burger img {
-  max-height: 35px; }
-
-.navegacion {
-  color: #ec84c4;
-  background-color: #C7E1A7;
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  top: 0px;
-  z-index: 1;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  grid-area: nav; }
-
-.navegacion ul {
-  list-style-type: none;
-  background-color: #C7E1A7; }
-
-.menu {
-  width: 100%;
-  display: none; }
-
-.menu > li {
-  position: relative;
-  display: inline-block;
-  padding: 0px 15px;
-  text-align: center;
-  border: rosybrown 1px solid; }
-
-.menu > li > a {
-  display: block;
-  padding: 15px 40px;
-  background-color: #C7E1A7;
-  text-decoration: none; }
-
-.menu li a {
-  color: rosybrown;
-  transition: all 0.5s; }
-
-.menu li a:hover {
-  color: #c20c67;
-  background-color: #bae487; }
-
-.menu li:hover {
-  background-color: #bae487; }
-
-.subMenu {
-  position: absolute;
-  background-color: #C7E1A7;
-  display: none; }
-
-.subMenu li {
-  border: rosybrown 1px solid; }
-
-.subMenu li a {
-  display: block;
-  padding: 15px;
-  color: rosybrown;
-  text-decoration: none; }
-
-.menu li:hover .subMenu {
-  display: block;
-  background-color: #C7E1A7; }
 
 /*Img principal mobile*/
 .principal {
@@ -186,22 +113,20 @@ footer {
 /*BOX INICIO*/
 .elementos0 {
   margin-top: 0px; }
-
-.elementos0 article {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  display: inline; }
+  .elementos0 article {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: inline; }
 
 .titulosBox0 h2 {
   font-size: 25px;
   margin-top: 0px;
   margin-bottom: 20px;
   text-align: center; }
-
-.titulosBox0 h5 {
-  font-size: 25px;
-  text-align: center; }
+  .titulosBox0 h2 h5 {
+    font-size: 25px;
+    text-align: center; }
 
 .cardImage0 {
   width: 100%;
@@ -220,16 +145,15 @@ footer {
 
 /* BOX COMPRAS */
 .elementos1 {
-  padding: 25px;
+  padding: 0px 25px;
   display: flex;
   flex-flow: column nowrap; }
-
-.elementos1 article {
-  width: 100%;
-  height: 300px;
-  padding: 10px 0px;
-  overflow: hidden;
-  display: inline-block; }
+  .elementos1 article {
+    width: 100%;
+    height: 300px;
+    padding: 10px 0px;
+    overflow: hidden;
+    display: inline-block; }
 
 .titulosBox1 h4 {
   margin: 10px;
@@ -277,61 +201,53 @@ footer {
   margin-top: 15px;
   padding: 25%;
   background-color: #eecee4; }
-
-.elementos2 article {
-  background-color: #eecee4;
-  width: 100%;
-  height: 250px;
-  padding: 10px 0px;
-  overflow: hidden;
-  display: inline-block; }
-
-.elementos2 article img {
-  padding: 15px;
-  width: 50%;
-  margin: 5px; }
+  .elementos2 article {
+    background-color: #eecee4;
+    width: 100%;
+    height: 250px;
+    padding: 10px 0px;
+    overflow: hidden;
+    display: inline-block; }
+    .elementos2 article img {
+      padding: 15px;
+      width: 50%;
+      margin: 5px; }
 
 .titulosBox2 {
   padding: 0px 10%;
   text-align: center; }
-
-.titulosbox2 h2 {
-  font-size: 20px; }
-
-.titulosBox2 h4 {
-  font-size: 16px;
-  padding: 15px; }
+  .titulosBox2 h2 {
+    font-size: 20px; }
+  .titulosBox2 h4 {
+    font-size: 16px;
+    padding: 15px; }
 
 /* BOX TESTIMONIOS*/
 .elementos3 {
   display: flex;
   flex-flow: column nowrap; }
-
-.elementos3 article {
-  width: 100%;
-  height: 300px;
-  overflow: hidden;
-  display: inline-block;
-  margin-top: 10px; }
+  .elementos3 article {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 10px; }
+  .elementos3 p {
+    font-size: 11px;
+    padding: 10px;
+    display: inline-block; }
 
 .titulosBox3 {
   padding: 10px;
   text-align: center; }
-
-.titulosBox3 h4 {
-  font-size: 25px;
-  text-transform: uppercase; }
-
-.titulosBox3 h5 {
-  font-size: 16px;
-  pad: 10px; }
-
-.titulosBox3 h2 {
-  font-size: 16px; }
-
-.elementos3 p {
-  font-size: 11px;
-  padding: 10px; }
+  .titulosBox3 h4 {
+    font-size: 25px;
+    text-transform: uppercase; }
+  .titulosBox3 h5 {
+    font-size: 16px;
+    padding: 10px; }
+  .titulosBox3 h2 {
+    font-size: 16px; }
 
 .cardImage3 {
   width: 100%;
@@ -339,47 +255,42 @@ footer {
   background-color: #bc8f8f; }
 
 .img1Test {
-  background-image: url("https://lamenteesmaravillosa.com/wp-content/uploads/2019/02/mujer-oliendo-girasol.jpg");
+  background-image: url(https://todossomosuno.com.mx/portal/wp-content/uploads/2013/02/madre-e-hija-foto-1024x696.gif);
   background-size: cover; }
 
 .img2Test {
-  background-image: url("https://mejorconsalud.as.com/wp-content/uploads/2013/05/Plantas-en-casa-500x334.jpg");
+  background-image: url(https://image.freepik.com/foto-gratis/mujer-joven-sosteniendo-planta-sonriendo-mostrando-signo-victoria_1368-64296.jpg);
   background-size: cover; }
 
 .img3Test {
-  background-image: url("https://www.latercera.com/resizer/zX0erSd4jR11mBSlH0jjBceFKnw=/900x600/smart/arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/YJAOMT5QJFFYNKGH3ODLKKKDRY.jpg");
+  background-image: url(https://image.freepik.com/foto-gratis/hombre-sonriente-mirando-fotografia_23-2148363634.jpg);
   background-size: cover; }
 
 /*BOX SERVICIOS*/
 .elementosServicios {
   margin-top: 0px;
   padding: 15px; }
-
-.elementosServicios article {
-  width: 100%;
-  height: 100%;
-  padding: 15px;
-  overflow: hidden;
-  display: block; }
-
-.elementosServicios p {
-  padding: 15px;
-  text-align: justify;
-  font-size: 1rem; }
-
-.elementosServicios article ul li {
-  padding: 10px;
-  font-size: 1rem;
-  transition: all 0.5s; }
-
-.elementosServicios article ul li:hover {
-  transform: scale(1.1); }
-
-.elementosServicios img {
-  display: block;
-  margin: auto;
-  width: 100%;
-  height: 250px; }
+  .elementosServicios p {
+    padding: 15px;
+    text-align: justify;
+    font-size: 1rem; }
+  .elementosServicios img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 250px; }
+  .elementosServicios article {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    overflow: hidden;
+    display: block; }
+    .elementosServicios article ul li {
+      padding: 10px;
+      font-size: 1rem;
+      transition: all 0.5s; }
+      .elementosServicios article ul li li:hover {
+        transform: scale(1.1); }
 
 .titulosBoxServicios h2 {
   font-size: 1.2rem;
@@ -404,6 +315,9 @@ footer {
   flex-wrap: wrap;
   justify-content: center; }
 
+.fotoSr:hover {
+  transform: scale(1.1); }
+
 .fotoSr {
   background-size: cover;
   background-position: center;
@@ -412,9 +326,6 @@ footer {
   min-width: 150px;
   min-height: 150px;
   transition: all 0.5s; }
-
-.fotoSr:hover {
-  transform: scale(1.1); }
 
 @media only screen and (min-width: 600px) {
   .elementosServicios img {
@@ -436,54 +347,46 @@ footer {
 .elementosC {
   margin-top: 0px;
   padding: 55px; }
-
-.elementosC article {
-  width: 50%;
-  height: 400px;
-  padding: 25px;
-  margin: 35px 0px;
-  overflow: hidden;
-  display: inline; }
-
-.elementosC p {
-  padding: 25px;
-  font-size: 20px;
-  text-align: center; }
-
-.elementosC form {
-  padding: 55px;
-  text-align: justify;
-  font-size: 20px; }
-
-.elementosC fieldset {
-  margin-top: 10px; }
+  .elementosC article {
+    width: 50%;
+    height: 400px;
+    padding: 25px;
+    margin: 35px 0px;
+    overflow: hidden;
+    display: inline; }
+  .elementosC p {
+    padding: 25px;
+    font-size: 20px;
+    text-align: center; }
+  .elementosC form {
+    padding: 55px;
+    text-align: justify;
+    font-size: 20px; }
+  .elementosC fieldset {
+    margin-top: 10px; }
 
 /*contacto*/
 .elementosC {
   margin-top: 0px;
   padding: 0px; }
-
-.elementosC article {
-  width: 100%;
-  height: 250px;
-  overflow: hidden;
-  display: inline;
-  text-align: center; }
-
-.elementosC p {
-  padding: 10px; }
-
-.elementosC main {
-  width: 100%;
-  height: 350px;
-  overflow: hidden;
-  display: inline; }
-
-.elementosC main p {
-  text-align: center;
-  color: #c4a5a5;
-  padding: 15px;
-  font-size: 1.2rem; }
+  .elementosC article {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    display: inline;
+    text-align: center; }
+  .elementosC p {
+    padding: 10px; }
+  .elementosC main {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    display: inline; }
+    .elementosC main p {
+      text-align: center;
+      color: #c4a5a5;
+      padding: 15px;
+      font-size: 1.2rem; }
 
 .formulariosC {
   display: block;
@@ -491,12 +394,10 @@ footer {
   padding: 10px;
   width: 90%;
   overflow: hidden; }
-
-.formulariosC div {
-  padding: 3px; }
-
-.formulariosC fieldset {
-  margin-top: 10px; }
+  .formulariosC div {
+    padding: 3px; }
+  .formulariosC fieldset {
+    margin-top: 10px; }
 
 .titulosBoxC h2 {
   font-size: 1.8rem;
@@ -510,16 +411,14 @@ footer {
 
 .footerC {
   grid-area: footer; }
-
-.footerC h3 {
-  font-size: 1rem;
-  text-align: center; }
-
-.footerC div {
-  font-size: 1rem;
-  color: grey;
-  text-align: center;
-  padding: 0px; }
+  .footerC h3 {
+    font-size: 1rem;
+    text-align: center; }
+  .footerC div {
+    font-size: 1rem;
+    color: grey;
+    text-align: center;
+    padding: 0px; }
 
 /*productos*/
 .galeriaSeleccion {
@@ -529,48 +428,40 @@ footer {
 .elementosP {
   display: flex;
   flex-flow: column nowrap;
-  grid-area: selec; }
+  grid-area: selec;
+  background-color: #c7e1a7c5; }
+  .elementosP p {
+    font-size: 0.9rem;
+    padding: 15px;
+    text-align: justify; }
 
 .seleccionP {
   grid-area: main; }
-
-.seleccionP main {
-  overflow: hidden;
-  display: block;
-  margin-top: 100px 20px; }
-
-.seleccionP p {
-  width: 100%;
-  font-size: 1rem;
-  text-align: center;
-  color: #c4a5a5; }
-
-.elementosP article {
-  width: 100%;
-  height: 450px;
-  overflow: hidden;
-  display: flex;
-  flex-flow: column nowrap;
-  margin-top: 10px; }
-
-.elementosP {
-  background-color: #c7e1a7c5; }
+  .seleccionP main {
+    overflow: hidden;
+    display: block;
+    margin-top: 100px 20px; }
+  .seleccionP p {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    color: #c4a5a5; }
+  .seleccionP article {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 10px; }
 
 .titulosBoxP {
   padding: 10px;
   text-align: center; }
-
-.titulosBoxP h2 {
-  font-size: 16px;
-  padding: 10px; }
-
-.titulosBoxP h5 {
-  font-size: 16px; }
-
-.elementosP p {
-  font-size: 0.9rem;
-  padding: 15px;
-  text-align: justify; }
+  .titulosBoxP h2 {
+    font-size: 16px;
+    padding: 10px; }
+  .titulosBoxP h5 {
+    font-size: 16px; }
 
 .cardImageP {
   width: 100%;
@@ -613,15 +504,14 @@ footer {
   padding: 10px;
   overflow: hidden;
   display: inline; }
+  .elementosProductos article ul li {
+    font-size: 0.9rem;
+    margin-bottom: 5px; }
 
 .elementosProductos p {
   padding: 15px;
   text-align: justify;
   font-size: 0.9rem; }
-
-.elementosProductos article ul li {
-  font-size: 0.9rem;
-  margin-bottom: 5px; }
 
 .titulosBoxProductos h4 {
   text-align: center;
@@ -713,31 +603,31 @@ footer {
     flex-flow: row nowrap;
     height: 100%;
     width: 100%; }
-  .elementosP article {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap;
-    margin-top: 10px; }
-  .elementosP p {
-    font-size: 1rem;
-    padding: 15px;
-    text-align: justify; }
+    .elementosP article {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 10px; }
+    .elementosP p {
+      font-size: 1rem;
+      padding: 15px;
+      text-align: justify; }
   .elementosProductos {
     margin-top: 0px;
     grid-area: descubri;
     display: flex;
     flex-flow: row wrap; }
-  .elementosProductos article {
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row wrap; }
-  .elementosProductos p {
-    text-align: center;
-    margin: auto; }
+    .elementosProductos article {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-flow: row wrap; }
+    .elementosProductos p {
+      text-align: center;
+      margin: auto; }
   .galeria {
     margin-top: 12vh;
     padding: 25px;
@@ -762,17 +652,17 @@ footer {
 @media only screen and (min-width: 1024px) {
   .elementosProductos {
     margin-top: 30px; }
-  .elementosProductos article {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    display: inline-block;
-    padding: 35px; }
-  .elementosProductos p {
-    text-align: justify;
-    font-size: 1rem;
-    width: 70%;
-    margin: auto; }
+    .elementosProductos article {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: inline-block;
+      padding: 35px; }
+    .elementosProductos p {
+      text-align: justify;
+      font-size: 1rem;
+      width: 70%;
+      margin: auto; }
   .seleccionP p {
     height: 100%; }
   .titulosBoxProductos h3 {
@@ -800,6 +690,7 @@ footer {
     margin: auto;
     background-position: bottom; } }
 
+/*generales*/
 p {
   color: gray;
   font-weight: 400; }
@@ -853,7 +744,6 @@ h5 {
       height: 100%;
       overflow: hidden; }
   .titulosBox1 h4 {
-    margin: 5px;
     text-align: center;
     font-size: 0.8rem;
     margin: 10px; }
@@ -933,10 +823,10 @@ h5 {
     display: none; }
   .header {
     margin: 55px; }
-  .header img {
-    margin: 25px;
-    width: 700px;
-    height: 500px; }
+    .header img {
+      margin: 25px;
+      width: 700px;
+      height: 500px; }
   .txtPrincipal {
     display: none; }
   .galeriaHome {
@@ -949,11 +839,11 @@ h5 {
     height: 400px; }
   .elementos1 {
     display: inline-block; }
-  .elementos1 article {
-    width: 30%;
-    height: 100%;
-    overflow: hidden;
-    margin: 0px 15px; }
+    .elementos1 article {
+      width: 30%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0px 15px; }
   .titulosBox1 h4 {
     margin: 15px;
     text-align: center;
@@ -1019,22 +909,20 @@ h5 {
     height: 750px !important; } }
 
 /*transformacion quienes somos*/
-.divValores :hover {
-  transform: scale(1.1);
-  color: #ca4c4c; }
-
-.divValores p {
-  color: rosybrown;
-  font-size: 1.5rem;
-  text-align: center;
-  transition: all 0.5s; }
-
 .divValores {
   transition: all 0.5s; }
+  .divValores .divValores :hover {
+    transform: scale(1.1);
+    color: #ca4c4c; }
+  .divValores p {
+    color: rosybrown;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: all 0.5s; }
 
 .captionOscura {
   color: rosybrown !important;
-  background-color: #C7E1A7; }
+  background-color: #c7e1a7; }
 
 .formularioContacto {
   padding: 15px;
