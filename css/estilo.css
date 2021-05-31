@@ -5,17 +5,16 @@
 body {
   font-family: "Poppins", sans-serif; }
 
-.listaMenu {
-  list-style: none inside; }
-
 .navnav {
-  background-color: #c7e1a7 !important; }
+  background-color: #c7e1a7 !important;
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10; }
 
 .drop {
   z-index: 1; }
-
-.fotoIndex {
-  z-index: 5; }
 
 .item {
   font-size: 1.1rem;
@@ -93,18 +92,6 @@ footer {
   font-weight: 600;
   color: #bc8f8f; }
 
-.imgPrincipal img {
-  margin-top: 55px;
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-  display: inline; }
-
-.txtPrincipal {
-  position: absolute;
-  top: 20%;
-  left: 50%; }
-
 /* BOXMODEL*/
 .section {
   margin: 0px 0px;
@@ -166,10 +153,6 @@ footer {
   text-align: center;
   font-size: 20px;
   margin: 10px; }
-
-.bordeTitulo1 {
-  border: #ec84c4 2px solid;
-  padding: 25px; }
 
 .cardImage1 {
   height: 200px;
@@ -254,6 +237,23 @@ footer {
   height: 150px;
   background-color: #bc8f8f; }
 
+.img-perfil {
+  width: 16rem;
+  clip-path: circle(80px at center);
+  margin-top: 4.5rem;
+  margin-bottom: 2rem; }
+
+.container-op {
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  border: rosybrown solid 1px; }
+
+.banner-color {
+  background-color: #c7e1a76e;
+  height: 50%; }
+
 .img1Test {
   background-image: url(https://todossomosuno.com.mx/portal/wp-content/uploads/2013/02/madre-e-hija-foto-1024x696.gif);
   background-size: cover; }
@@ -267,39 +267,56 @@ footer {
   background-size: cover; }
 
 /*BOX SERVICIOS*/
-.elementosServicios {
-  margin-top: 0px;
-  padding: 15px; }
-  .elementosServicios p {
-    padding: 15px;
-    text-align: justify;
-    font-size: 1rem; }
-  .elementosServicios img {
-    display: block;
-    margin: auto;
-    width: 100%;
-    height: 250px; }
-  .elementosServicios article {
-    width: 100%;
-    height: 100%;
-    padding: 15px;
-    overflow: hidden;
-    display: block; }
-    .elementosServicios article ul li {
-      padding: 10px;
-      font-size: 1rem;
-      transition: all 0.5s; }
-      .elementosServicios article ul li li:hover {
-        transform: scale(1.1); }
-
-.titulosBoxServicios h2 {
-  font-size: 1.2rem;
-  text-align: center; }
-
-.titulosBoxServicios h4 {
-  font-size: 1.2rem;
+.elementosServicios article {
+  width: 100%;
+  height: 100%;
+  margin: 15px;
   padding: 10px;
-  text-align: center; }
+  overflow: hidden;
+  display: inline; }
+  .elementosServicios article p {
+    text-align: justify;
+    width: 70%;
+    margin: auto; }
+  .elementosServicios article div {
+    width: 70%;
+    margin: auto; }
+
+.centradoServicios {
+  text-align: center;
+  margin: auto !important; }
+
+.imgServicios1 {
+  background-image: url("https://images.pexels.com/photos/4202323/pexels-photo-4202323.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover; }
+
+.imgServicios2 {
+  background-image: url("https://images.pexels.com/photos/6231720/pexels-photo-6231720.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover; }
+
+.imgServicios3 {
+  background-image: url("https://images.pexels.com/photos/4503732/pexels-photo-4503732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover; }
+
+.imgServicios4 {
+  background-image: url("https://images.pexels.com/photos/4750274/pexels-photo-4750274.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-size: cover; }
+
+.imgServicios5 {
+  background-image: url("https://images.pexels.com/photos/1055408/pexels-photo-1055408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover; }
+
+.imgServicios6 {
+  background-image: url("https://images.pexels.com/photos/3708717/pexels-photo-3708717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover; }
+
+.imgServicios7 {
+  background-image: url("https://images.pexels.com/photos/4503817/pexels-photo-4503817.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover; }
+
+.imgServicios8 {
+  background-image: url("https://images.pexels.com/photos/4503268/pexels-photo-4503268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover; }
 
 /*OTRA GALERIA DE SERVICIOS*/
 .galeriaSr {
@@ -328,46 +345,139 @@ footer {
   transition: all 0.5s; }
 
 @media only screen and (min-width: 600px) {
-  .elementosServicios img {
-    width: 50%;
-    height: 50%; }
-  .elementosServicios p {
-    width: 80%;
-    display: block;
-    margin: auto; }
+  .elementosServicios {
+    margin-top: 30px; }
+    .elementosServicios article {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 15px;
+      margin: 5px;
+      margin-left: 25px; }
+    .elementosServicios p {
+      text-align: justify;
+      width: 50%;
+      margin: auto;
+      padding: 5px;
+      font-size: 1rem;
+      margin-right: 25px; }
+    .elementosServicios div {
+      text-align: left;
+      width: 50%;
+      margin: auto;
+      border-left: rosybrown solid 2px;
+      padding: 25px;
+      font-size: 0.9rem; }
   .fotoSr {
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
     min-width: 300px;
-    min-height: 300px; } }
+    min-height: 300px; }
+  .miniGaleriaServicios {
+    width: 25%;
+    height: 100px;
+    justify-content: first baseline;
+    background-color: #c7e1a7;
+    display: flex;
+    flex-flow: row nowrap;
+    margin: auto; }
+  .titulosBoxServicios h3 {
+    text-align: center;
+    font-size: 1rem; }
+  .titulosBoxServicios h2 {
+    padding: 10px;
+    margin: 0px 15px;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: underline #b98080 1px solid;
+    font-weight: 800;
+    text-transform: uppercase; }
+  .cardImageServicios {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    display: block;
+    margin: auto; } }
+
+@media only screen and (min-width: 1024px) {
+  .elementosServicios {
+    margin-top: 30px; }
+    .elementosServicios article {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 55px;
+      margin: 25px;
+      margin-left: 15px; }
+    .elementosServicios p {
+      text-align: justify;
+      width: 50%;
+      margin: auto;
+      margin-right: 25px;
+      padding: 35px;
+      font-size: 1.1rem; }
+    .elementosServicios div {
+      text-align: left;
+      width: 50%;
+      margin: auto;
+      border-left: rosybrown solid 2px;
+      padding: 45px;
+      font-size: 1rem; }
+  .titulosBoxServicios h3 {
+    margin-top: 55px;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    -webkit-transform: rotate(270deg);
+    writing-mode: lr-tb; }
+  .titulosBoxServicios h2 {
+    padding: 10px;
+    margin: 0px 15px;
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline #b98080 1px solid;
+    font-weight: 800;
+    text-transform: uppercase; } }
 
 /*CONTACTO*/
-.elementosC {
-  margin-top: 0px;
-  padding: 55px; }
-  .elementosC article {
-    width: 50%;
-    height: 400px;
-    padding: 25px;
-    margin: 35px 0px;
-    overflow: hidden;
-    display: inline; }
-  .elementosC p {
-    padding: 25px;
-    font-size: 20px;
-    text-align: center; }
-  .elementosC form {
-    padding: 55px;
-    text-align: justify;
-    font-size: 20px; }
-  .elementosC fieldset {
-    margin-top: 10px; }
+@media only screen and (min-width: 600px) {
+  .elementosC {
+    margin-top: 55px;
+    padding: 55px; }
+    .elementosC article {
+      width: 100%;
+      height: 400px;
+      padding: 25px;
+      margin: 55px;
+      overflow: hidden;
+      display: inline; }
+    .elementosC main {
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+      display: inline; }
+      .elementosC main p {
+        width: 70%;
+        margin: auto;
+        padding: 25px;
+        font-size: 20px;
+        text-align: center; }
+    .elementosC form {
+      padding: 55px;
+      text-align: justify;
+      font-size: 20px; }
+    .elementosC fieldset {
+      margin-top: 10px; } }
 
 /*contacto*/
 .elementosC {
-  margin-top: 0px;
+  margin-top: 25px;
   padding: 0px; }
   .elementosC article {
     width: 100%;
@@ -375,8 +485,6 @@ footer {
     overflow: hidden;
     display: inline;
     text-align: center; }
-  .elementosC p {
-    padding: 10px; }
   .elementosC main {
     width: 100%;
     height: 350px;
@@ -465,7 +573,7 @@ footer {
 
 .cardImageP {
   width: 100%;
-  height: 150px;
+  height: 300px;
   margin: 10px;
   background-color: rosybrown; }
 
@@ -547,9 +655,8 @@ footer {
   background-size: cover; }
 
 .imgProductos4 {
-  background-image: url("https://images.pexels.com/photos/970089/pexels-photo-970089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-size: cover;
-  background-position: center; }
+  background-image: url("https://images.pexels.com/photos/1048024/pexels-photo-1048024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover; }
 
 .galeria {
   padding: 25px;
@@ -579,6 +686,7 @@ footer {
 .fotosPr {
   margin-top: 15px; }
 
+/*PRODUCTOS*/
 @media only screen and (min-width: 600px) {
   .grillaProductos {
     display: grid;
@@ -616,17 +724,23 @@ footer {
       text-align: justify; }
   .elementosProductos {
     margin-top: 0px;
-    grid-area: descubri;
     display: flex;
     flex-flow: row wrap; }
     .elementosProductos article {
-      width: 50%;
+      width: 100%;
       height: 100%;
       overflow: hidden;
       display: flex;
       flex-flow: row wrap; }
     .elementosProductos p {
       text-align: center;
+      margin: auto;
+      font-size: 1rem; }
+    .elementosProductos .cardImageProductos {
+      width: 60%;
+      height: 300px;
+      background-color: rosybrown;
+      display: block;
       margin: auto; }
   .galeria {
     margin-top: 12vh;
@@ -656,21 +770,25 @@ footer {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      display: inline-block;
-      padding: 35px; }
+      display: flex;
+      flex-flow: row nowrap;
+      padding: 55px;
+      margin: 25px;
+      margin-left: 15px; }
     .elementosProductos p {
       text-align: justify;
-      font-size: 1rem;
-      width: 70%;
-      margin: auto; }
-  .seleccionP p {
-    height: 100%; }
+      width: 50%;
+      margin: auto;
+      margin-right: 25px;
+      padding: 35px;
+      font-size: 1.1rem; }
   .titulosBoxProductos h3 {
-    padding: 10px;
-    margin: 15px;
+    margin-top: 55px;
+    padding: 15px;
     text-align: center;
-    font-size: 20px;
-    width: 70%; }
+    font-size: 1.2rem;
+    -webkit-transform: rotate(270deg);
+    writing-mode: lr-tb; }
   .titulosBoxProductos h2 {
     padding: 10px;
     margin: 0px 15px;
@@ -680,15 +798,13 @@ footer {
     font-weight: 800;
     text-transform: uppercase; }
   .cardImageProductos {
-    width: 50%;
+    width: 40%;
     height: 300px;
     background-color: rosybrown;
     display: block;
     margin: auto; }
-  .imgProductos4 {
-    display: block;
-    margin: auto;
-    background-position: bottom; } }
+  .elementosP {
+    height: 700px; } }
 
 /*generales*/
 p {
@@ -730,8 +846,6 @@ h5 {
     padding: 25px; }
   .menu {
     display: none; }
-  .burger {
-    display: block; }
   .logo {
     display: block; }
   .elementos1 {
@@ -756,7 +870,6 @@ h5 {
     height: 100%; }
     .elementos3 article {
       width: 30%;
-      height: 100%;
       overflow: hidden;
       display: inline-block;
       margin-top: 10px; }
@@ -800,15 +913,40 @@ h5 {
     display: grid;
     grid-template-columns: repeat 6fr 2fr 2fr;
     grid-template-rows: 7, auto;
-    grid-template-areas: "nav nav nav" "header header header" "galeria galeria galeria" "compra compra comrpa" "serv serv serv" "exp exp exp" "footer footer footer"; }
-  main p {
-    width: 70%;
-    text-align: center;
-    margin: auto;
-    height: 100%;
-    display: none; }
-  .burger {
-    display: none; }
+    grid-template-areas: "nav nav nav" "header header header" "galeria galeria galeria" "compra compra compra" "serv serv serv" "exp exp exp" "footer footer footer"; }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center; }
+  .carousel-index .carousel-contenedor-caption {
+    transform: translateY(-50%);
+    top: 50%;
+    bottom: initial; }
+  .carousel-index .carousel-contenedor-caption p {
+    color: rosybrown;
+    font-size: 2vw;
+    font-weight: 300; }
+  .carousel-index .carousel-contenedor-caption h1 {
+    color: #c7e1a7;
+    font-size: 5vw;
+    font-weight: 600; }
+  .carousel-index .boton-index a {
+    color: white;
+    text-decoration: none;
+    text-decoration: none;
+    background-color: transparent; }
+  .nav-custom {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10; }
   .logo {
     display: block; }
   .logo img {
@@ -816,42 +954,34 @@ h5 {
     height: 50px; }
   .menu {
     display: inline-block; }
-  .navegacion {
-    width: 100%;
-    height: 50px; }
-  .galeriaHome {
-    display: none; }
   .header {
     margin: 55px; }
     .header img {
       margin: 25px;
       width: 700px;
       height: 500px; }
-  .txtPrincipal {
-    display: none; }
-  .galeriaHome {
-    display: none; }
   #section0 {
     margin: 15px; }
-  #section1 {
-    margin: 0px; }
-  .section1 {
-    height: 400px; }
   .elementos1 {
-    display: inline-block; }
+    display: inline-block;
+    height: 500px; }
     .elementos1 article {
       width: 30%;
       height: 100%;
       overflow: hidden;
-      margin: 0px 15px; }
+      margin: 0px 15px;
+      padding: 25px; }
+  .cardImage1 {
+    margin: 35px; }
   .titulosBox1 h4 {
     margin: 15px;
     text-align: center;
-    font-size: 16px; }
+    font-size: 16px;
+    padding: 25px; }
   .titulosBox1 h2 {
     margin: 10px;
     text-align: center;
-    font-size: 20px; }
+    font-size: 1.5rem; }
   #section2 {
     background-color: #eecee4;
     height: 400px; }
@@ -879,31 +1009,36 @@ h5 {
       font-size: 16px;
       padding: 15px; }
   .elementos3 {
-    display: inline-block; }
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    margin: 25px;
+    padding: 35px; }
     .elementos3 article {
-      width: 30%;
-      height: 100%;
+      width: 100%;
       overflow: hidden;
-      display: inline-block;
-      margin-top: 10px;
-      align-items: stretch; }
+      display: flex;
+      flex-flow: row nowrap;
+      margin-top: 55px;
+      align-items: stretch;
+      background-color: rgba(182, 132, 132, 0.658); }
   .titulosBox3 {
     padding: 10px;
     text-align: center; }
     .titulosBox3 h4 {
       font-size: 25px;
       text-transform: uppercase; }
-    .titulosBox3 h5 {
-      font-size: 16px;
-      padding: 10px; }
     .titulosBox3 h2 {
       font-size: 20px; }
   .elementos3 p {
-    font-size: 16px;
-    padding: 10px; }
+    font-size: 1rem;
+    padding: 10px;
+    width: 50%;
+    margin: auto; }
   .cardImage3 {
-    width: 100%;
-    height: 150px;
+    width: 30%;
+    height: 100%;
+    margin: 25px;
     background-color: rosybrown; }
   .imgAltoCarousel {
     height: 750px !important; } }

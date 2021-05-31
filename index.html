@@ -1,280 +1,359 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLANTIA tienda de plantas </title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-<meta name="description"
-content="Tienda de plantas, servicio de planificacion del jardin, huertas y composteras, talleres de propagacon de plantas. Naturaleza consciente">
-<meta name="keywords"
-content="PLANTAS, VIVERO, FLORES, JARDINERIA, NATURALEZA, MACETAS">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLANTIA tienda de plantas </title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+  </script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta name="description"
+    content="Tienda de plantas, servicio de planificacion del jardin, huertas y composteras, talleres de propagacon de plantas. Naturaleza consciente">
+  <meta name="keywords" content="PLANTAS, VIVERO, FLORES, JARDINERIA, NATURALEZA, MACETAS">
 </head>
+
 <body>
-<!--<div class="grillaHome">--> 
-    <nav class="navbar navbar-expand-lg navbar-light navnav">
-        <div class="container-fluid item">
-          <a class="navbar-brand" href="#"> <img src="media/PLANTIA mother earth.png" alt="logo PLANTIA" width="45" height="35" class="d-inline-block align-text-top"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse menu-cambios" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 item">
-              <li class="nav-item item">
-                <a class="nav-link active item" aria-current="page" href="index.html">Home</a>
+  <!--<div class="grillaHome">-->
+
+  <nav class="navbar navbar-expand-lg navbar-light navnav">
+    <div class="container-fluid item">
+      <a class="navbar-brand" href="#"> <img src="media/PLANTIA mother earth.png" alt="logo PLANTIA" width="45"
+          height="35" class="d-inline-block align-text-top"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menu-cambios" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 item">
+          <li class="nav-item item">
+            <a class="nav-link active item" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown item">
+            <a class="nav-link dropdown-toggle item" href="productos.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu submenuBoot drop" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item drop" href="productos.html#seleccionadas">Plantas seleccionadas del mes</a>
               </li>
-              <li class="nav-item dropdown item">
-                <a class="nav-link dropdown-toggle item" href="productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                </a>
-                <ul class="dropdown-menu submenuBoot drop" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item drop" href="productos.html#seleccionadas">Plantas seleccionadas del mes</a></li>
-                  <li><a class="dropdown-item drop" href="productos.html#interior">De interior</a></li>
-                  <li><a class="dropdown-item drop" href="productos.html#exterior">De exterior</a></li>
-                  <li><a class="dropdown-item drop" href="productos.html#exoticas">Exóticas</a></li>
-                  <li><a class="dropdown-item drop" href="productos.html#complementos">Complementos</a></li>
-                </ul>
-               </li>
-                <li class="nav-item dropdown item">
-                <a class="nav-link dropdown-toggle item" href="servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Servicios
-                </a>
-              <ul class="dropdown-menu submenuBoot" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="servicios.html#talleres">Talleres</a></li>
-                <li><a class="dropdown-item" href="servicios.html#suscripcion">Suscripcion club PLANTIA</a></li>
-                <li><a class="dropdown-item" href="servicios.html#planificacion">Planificacion de tu jardin</a></li>
-                <li><a class="dropdown-item" href="servicios.html#hyc">Huertas y composteras</a></li>
-              </ul>
-                </li>
-                <li class="nav-item item">
-                    <a class="nav-link active item" aria-current="page" href="Quienessomos.html">Quienes somos</a>
-                    </li>
-                <li class="nav-item item">
-                <a class="nav-link active item" aria-current="page" href="contacto.html">Contacto</a>
-                </li>
+              <li><a class="dropdown-item drop" href="productos.html#interior">De interior</a></li>
+              <li><a class="dropdown-item drop" href="productos.html#exterior">De exterior</a></li>
+              <li><a class="dropdown-item drop" href="productos.html#exoticas">Exóticas</a></li>
+              <li><a class="dropdown-item drop" href="productos.html#complementos">Complementos</a></li>
             </ul>
+          </li>
+          <li class="nav-item dropdown item">
+            <a class="nav-link dropdown-toggle item" href="servicios.html" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu submenuBoot" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="servicios.html#talleres">Talleres</a></li>
+              <li><a class="dropdown-item" href="servicios.html#suscripcion">Suscripcion club PLANTIA</a></li>
+              <li><a class="dropdown-item" href="servicios.html#planificacion">Planificacion de tu jardin</a></li>
+              <li><a class="dropdown-item" href="servicios.html#hyc">Huertas y composteras</a></li>
+            </ul>
+          </li>
+          <li class="nav-item item">
+            <a class="nav-link active item" aria-current="page" href="Quienessomos.html">Quienes somos</a>
+          </li>
+          <li class="nav-item item">
+            <a class="nav-link active item" aria-current="page" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="contenedor">
+    <div class="row">
+      <div id="carouselExampleControls" class="carousel slide carousel-index container-fluid m-0 pointer-event"
+        data-ride="carousel">
+        <div class="carousel-caption d-md-block mb-5 carousel-contenedor-caption row">
+          <h1 class="carousel-titulo col-12">PLANTIA <br> mother-earth</h1>
+          <p class="carousel-subtitulo mb-4 col-12">tienda de plantas</p>
+          <div class="col-12">
+            <button type="button" class="btn btn-secondary btn-lg boton-index"><a href="servicios.html"> Nuestros
+                servicios</a></button></div>
+        </div>
+        <div id="carouselExampleControls" class="carousel slide fotosIndex" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="media/pexels-karolina-grabowska-4594027.jpg" class="d-block w-100 imgAltoCarousel"
+                alt="imagen en detalle de suculenta color azul">
+            </div>
+            <div class="carousel-item">
+              <img src="media/pexels-karolina-grabowska-4594030.jpg" class="d-block w-100 imgAltoCarousel"
+                alt="Plantas de tipo selvativo con hojas grandes">
+            </div>
+            <div class="carousel-item">
+              <img src="media/pexels-karolina-grabowska-4589336.jpg" class="d-block w-100 imgAltoCarousel"
+                alt="hojas de palmera grandes">
+            </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </nav>
-
-            <div id="carouselExampleControls" class="carousel slide fotosIndex" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="media/pexels-claire-morgan-4068015.jpg" class="d-block w-100 imgAltoCarousel" alt="imagen en detalle de suculenta color azul">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5 class="captionOscura">PLANTIA tienda de plantas</h5>
-                      <p class="captionOscura">Cuando elegís tener una planta, estas eligiendo dar de tu tiempo y de tu espacio, sabemos lo que eso vale:</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://images.pexels.com/photos/631909/pexels-photo-631909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-block w-100 imgAltoCarousel" alt="Plantas de tipo selvativo con hojas grandes">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5 class="captionOscura">PLANTIA tienda de plantas</h5>
-                      <p class="captionOscura"> Por eso en Plantia generamos un lugar donde vas a encontrar la mejor calidad en plantas, el mejor surtido de macetas, y todo lo necesario para poder cuidarlas de la manera que merecen.</p>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://images.pexels.com/photos/788488/pexels-photo-788488.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-block w-100 imgAltoCarousel" alt="hojas de palmera grandes">
-                    <div class="carousel-caption d-none d-md-block ">
-                      <h5 class="captionOscura">PLANTIA tienda de plantas</h5>
-                      <p class="captionOscura"> Si elegís plantas elegís Vida.</p>
-                    </div>
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            <header class="principal header">
-            <section class="section" id="section0">
-            <div class="elementos0 titulosBox0">
-            <article >
-            <main>
+      </div>
+      <header class="principal header">
+        <section class="section" id="section0">
+          <div class="elementos0 titulosBox0">
+            <article>
+              <main>
                 <h2>Plantia tienda de plantas</h2>
-                <p>Cuando elegís tener una planta, estas eligiendo dar de tu tiempo y de tu espacio, sabemos lo que eso vale, por eso en Plantia generamos un lugar donde vas a encontrar la mejor calidad en plantas, el mejor surtido de macetas, y todo lo necesario para poder cuidarlas de la manera que merecen. Si elegís plantas elegís Vida.</p>
-            </main>
+                <p>Cuando elegís tener una planta, estas eligiendo dar de tu tiempo y de tu espacio, sabemos lo que
+                  eso vale, por eso en Plantia generamos un lugar donde vas a encontrar la mejor calidad en plantas,
+                  el mejor surtido de macetas, y todo lo necesario para poder cuidarlas de la manera que merecen. Si
+                  elegís plantas elegís Vida.</p>
+              </main>
             </article>
-            </div>
-            </section>
-        </header>
-       <section class="section compra" id="section1">
-        <div class="elementos1 titulosBox1 ">
-            <h2>Tres cosas que te van a encantar de comprar en Plantia</h2>
-            <article>
-                <h4>Seleccionamos a mano las mejores plantas para ti y las preparamos cuidadosamente para que se mantengan</h4>
-                <div class="cardImage1 imgCompra1 rounded-circle radio"></div>
-            </article>
-            <article>
-                <h4>Te las entregamos en casa o en lugar que prefieras o las enviamos como regalo para sorprender a quien desees</h4>
-                <div class="cardImage1 imgCompra2 rounded-circle radio"></div>
-            </article>
-            <article>
-                <h4>En nuestra web encontrarás los cuidados y consejos de nuestros expertos para que tu planta crezca sana y feliz en su nuevo hogar.</h4>
-                <div class="cardImage1 imgCompra3 rounded-circle radio"></div>
-            </article>
-        </div>
+          </div>
         </section>
+      </header>
+         
+      <section class="section compra" id="section1">
+         
+        <div class="elementos1 titulosBox1">
+          <h2>Tres cosas que te van a encantar de comprar en Plantia</h2>
+          <article>
+            <div data-aos="zoom-in" data-aos-duration="2000">
+            <h4>Seleccionamos a mano las mejores plantas para ti y las preparamos cuidadosamente para que se mantengan
+            </h4>
+            <div class="cardImage1 imgCompra1 rounded-circle radio"></div>
+          </div>
+          </article>
+          <article>
+            <div data-aos="zoom-in" data-aos-duration="2000">
+            <h4>Te las entregamos en casa o en lugar que prefieras o las enviamos como regalo para sorprender a quien
+              desees</h4>
+            <div class="cardImage1 imgCompra2 rounded-circle radio"></div>
+          </div>
+          </article>
+          <article>
+            <div data-aos="zoom-in" data-aos-duration="2000">
+            <h4>En nuestra web encontrarás los cuidados y consejos de nuestros expertos para que tu planta crezca sana
+              y feliz en su nuevo hogar.</h4>
+            <div class="cardImage1 imgCompra3 rounded-circle radio"></div>
+          </div>
+          </article>
+      </div>
+      </section>
+    
+      <section class="section serv" id="section2">
+        <div class=" bck elementos2 titulosBox2"  data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top-bottom">
+          <h2 class="titulosBox2">Ademas contamos con:</h2>
+          <article>
+            <h4>Envios gratuitos a partir de 4500 pesos</h4>
+            <img src="https://www.fronda.com/sites/default/files/puntos-inicio/envio.png"
+              alt="imagen sobre envios, camion con reloj">
+          </article>
+          <article>
+            <h4>Asesoramiento personalizado via chat o de manera presencial</h4>
+            <img src="https://www.fronda.com/sites/default/files/puntos-inicio/asesoramiento.png"
+              alt="imagen sobre asesoramiento personalizado, persona con planta en manos">
+          </article>
+          <article>
+            <h4>Diferentes paquetes para que puedas hacer un regalo especial</h4>
+            <img src="https://www.fronda.com/sites/default/files/puntos-inicio/regalo.png"
+              alt="imagen sobre regalos, caja de regalo">
+          </article>
+        </div>
+      </section>
 
-        <section class="section serv" id="section2">
-        <div class=" bck elementos2 titulosBox2  ">
-            <h2 class="titulosBox2" >Ademas contamos con:</h2>
-            <article>
-                <h4>Envios gratuitos a partir de 4500 pesos</h4>
-                <img src="https://www.fronda.com/sites/default/files/puntos-inicio/envio.png" alt="imagen sobre envios, camion con reloj">
-            </article>
-            <article>
-                <h4>Asesoramiento personalizado via chat o de manera presencial</h4>
-                <img src="https://www.fronda.com/sites/default/files/puntos-inicio/asesoramiento.png" alt="imagen sobre asesoramiento personalizado, persona con planta en manos">
-            </article>
-            <article>
-                <h4>diferentes paquetes para que puedas hacer un regalo especial</h4>
-                <img src="https://www.fronda.com/sites/default/files/puntos-inicio/regalo.png" alt="imagen sobre regalos, caja de regalo">
-            </article>
-        </div>
-        </section>
-        
-        <section class="section exp" id="section3">
+      <section class="section exp" id="section3">
         <div class="titulosBox3 elementos3 ">
-            <div class="titulosBox3 bordeTitulo3">
-                <h2>Nuestros clientes nos cuentan su experiencia con plantia</h2>
-            </div> 
-            <article>
-                <div class="cardImage3 img1Test"> </div>
-                <h5>Juan Perez </h5>
-                <p>Las chicas de Plantia supieron resolver todas mis dudas y me ayudaron a elegir la mejor planta para mi balcon. Un servicio <br>excelente, sin dudas voy a volver a confiar en ellas.</p>
-            </article>
-            <article >
-                <div class="cardImage3 img2Test"> </div>
-                <h5>Pepita </h5>
-                <p>Las chicas de Plantia supieron resolver todas mis dudas y me ayudaron a elegir la mejor planta para mi balcon. Un servicio <br>excelente, sin dudas voy a volver a confiar en ellas. Amo plantia!</p>
-            </article>
-            <article>
-                <div class="cardImage3 img3Test"> </div>
-                <h5>Pepita2 </h5>
-                <p>Muy buena atencion. Me recomendaron plantas para cada rincon de mi casade acuerdo al tamaño, <br>luz, sombra y mi capacidad de cuidaras. ¡me encanto el lugar!</p>
-            </article>
-        </div>
+          <div class="titulosBox3">
+          <section id="opiniones">
+            <h2 class="color">Nuestros clientes nos cuentan su experiencia con Plantia: </h2>
+            <div class="row">
+              <div class="col-sm" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="container-op">
+                  <div class="banner-color">
+                  <img
+                    src="https://todossomosuno.com.mx/portal/wp-content/uploads/2013/02/madre-e-hija-foto-1024x696.gif" alt="imagen de perfil" class="img-perfil">
+                  </div>
+                  <h4>Maria</h4>
+                  <p>Muy buena atencion. Me recomendaron plantas para cada rincon de mi casa de acuerdo al tamaño, luz,
+                    sombra y mi capacidad de cuidaras. ¡me encanto el lugar!</p>
+                  <div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="container-op">
+                  <div class="banner-color">
+                  <img
+                    src="https://image.freepik.com/foto-gratis/mujer-joven-sosteniendo-planta-sonriendo-mostrando-signo-victoria_1368-64296.jpg"
+                    alt="imagen de perfil" class="img-perfil">
+                  </div>
+                  <h4>Juana</h4>
+                  <p>Las chicas de Plantia supieron resolver todas mis dudas y me ayudaron a elegir la mejor planta para mi
+                    balcon. Un servicio excelente, sin dudas voy a volver a confiar en ellas.</p>
+                  <div>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-sm" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="container-op">
+                  <div class="banner-color">
+                  <img src="https://image.freepik.com/foto-gratis/hombre-sonriente-mirando-fotografia_23-2148363634.jpg"
+                    alt="imagen de perfil" class="img-perfil">
+                  </div>
+                  <h4>Jacobo</h4>
+                  <p>Compramos todos los meses ramos florales personalizados para la clinica, siempre buena
+                    presidsposicion e ideas innovadoras que nos dejan bien parados.</p>
+                  <div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+      </section>
+
+      <footer class="footer footerC">
+        <section class="footer1">
+          <article>
+            <div>
+              <h3>Seguinos en las redes sociales</h3>
+              <p>Facebook</p>
+              <p>Instagram</p>
+            </div>
+          </article>
+          <article>
+            <form>
+              <div class="mb-3">
+                <legend>SUSCRIBITE A NUESTRO NEWSLETTER PARA RECIBIR LAS ULTIMAS NOVEDADES </legend>
+                <label for="exampleInputEmail1" class="form-label"></label>
+                <input type="email" placeholder="Ingrese su email" class="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Tu email nunca sera compartido ni usado para otros fines</div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Suscribirme</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Gracias por suscribirte al newsletter de
+                          PLANTIA</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        En los proximos dias recibiras toda la informacion y beneficios exclusivos!
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </article>
         </section>
 
-        <footer class="footer footerC">
-          <section class="footer1">
-            <article>
+        <section class="sitemap">
+          <nav>
             <div>
-                <h3>Seguinos en las redes sociales</h3>
-                    <p>Facebook</p>
-                    <p>Instagram</p>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="Quienessomos.html">QUIENES SOMOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+              </ul>
             </div>
-            </article>
-            <article>
-              <form>
-                  <div class="mb-3">
-                      <legend>SUSCRIBITE A NUESTRO NEWSLETTER PARA RECIBIR LAS ULTIMAS NOVEDADES </legend>
-                      <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                      <input type="email" placeholder="Ingrese su email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  <div id="emailHelp" class="form-text">Tu email nunca sera compartido ni usado para otros fines</div>
-                      <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                     Suscribirme</button>
-                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                  <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Gracias por suscribirte al newsletter de PLANTIA</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                        En los proximos dias recibiras toda la informacion y beneficios exclusivos!
-                  </div>
-                  <div class="modal-footer">
-                     <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                  </div>
-                  </div>
-                  </div>
-                  </div>
-                  </div>
-             </form>
-            </article>
-          </section>
-
-          <section class="sitemap">
-            <nav>
-                <div>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="productos.html">PRODUCTOS</a></li>
-                        <li><a href="servicios.html">SERVICIOS</a></li>
-                        <li><a href="Quienessomos.html">QUIENES SOMOS</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
-                    </ul>
-                </div>
-              </nav>
-              <nav>
-                <div>
-                <ul>
-                  <li><a href="index.html">HOME</a></li>
-                  <li><a href="index.html#section1">Compra en plantia</a></li>
-                  <li><a href="index.html#section2">Beneficios</a></li>
-                  <li><a href="index.html#section3">Testimonios</a></li>
-                </ul>
-                </div>
-              </nav>
-              <nav>
-                <div>
-                <ul> 
-                  <li><a href="productos.html">PRODUCTOS</a></li>
-                    <li><a href="productos.html#seleccionadas">Plantas seleccionadas del mes</a></li>
-                    <li><a href="productos.html#interior">De interior</a></li>
-                    <li><a href="productos.html#exterior">De exterior</a></li>
-                    <li><a href="productos.html#exoticas">Exóticas</a></li>
-                    <li><a href="productos.html#complementos">Complementos</a></li>
-                </ul>
-                </div>
-            </nav>
-            <nav>
-              <div>
-              <ul> 
+          </nav>
+          <nav>
+            <div>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#section1">Compra en plantia</a></li>
+                <li><a href="index.html#section2">Beneficios</a></li>
+                <li><a href="index.html#section3">Testimonios</a></li>
+              </ul>
+            </div>
+          </nav>
+          <nav>
+            <div>
+              <ul>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="productos.html#seleccionadas">Plantas seleccionadas del mes</a></li>
+                <li><a href="productos.html#interior">De interior</a></li>
+                <li><a href="productos.html#exterior">De exterior</a></li>
+                <li><a href="productos.html#exoticas">Exóticas</a></li>
+                <li><a href="productos.html#complementos">Complementos</a></li>
+              </ul>
+            </div>
+          </nav>
+          <nav>
+            <div>
+              <ul>
                 <li><a href="servicios.html">SERVICIOS</a></li>
                 <li><a href="servicios.html#talleres">Talleres</a></li>
                 <li><a href="servicios.html#suscripcion">Suscripcion club PLANTIA</a></li>
                 <li><a href="servicios.html#planificacion">Planificacion de tu jardin</a></li>
                 <li><a href="servicios.html#hyc">Huertas y composteras</a></li>
               </ul>
-              </div>
-            </nav>
-            <nav>
-              <div>
+            </div>
+          </nav>
+          <nav>
+            <div>
               <ul>
                 <li><a href="Quienessomos.html">QUIENES SOMOS</a></li>
                 <li> <a href="Quienessomos.html#nosotras"> Sobre nosotras</a></li>
                 <li><a href="Quienessomos.html#ustedes"> Queremos saber de vos!</a></li>
               </ul>
-              </div>
-            </nav>
-            <nav>
-              <div>
+            </div>
+          </nav>
+          <nav>
+            <div>
               <ul>
                 <li><a href="contacto.html"> CONTACTO</a></li>
                 <li><a href="contacto.html#newsletter">Contactanos</a></li>
                 <li> <a href="contacto.html#ustedes"> Donde nos encotramos?</a></li>
               </ul>
-              </div>
-            </nav>
-            </section>
-        </footer>
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+            </div>
+          </nav>
+        </section>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
+
 </html>
